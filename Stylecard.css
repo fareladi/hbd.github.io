@@ -1,0 +1,332 @@
+body {
+    background-color:rgb(275, 197, 5);
+    padding-bottom:50px;
+}
+.card{
+    height: 650px;
+    width:300px;
+    background-color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:17%;
+    text-align:center ;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+p{
+    font-size:27px;
+    font-style: unset;
+    font-family: 'Rubik',sans-serif;
+            color:#2C3E50 ;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+}
+.bc{
+    background:#2C3E50;
+    height:200px;
+    width:300px;
+    position:relative ;
+    bottom:0;
+}
+/* here code for smile faces*/
+span{
+    position:absolute ;
+       height:98px;
+       width:98px;
+       background:crimson;
+       right:7px;
+       bottom:0;
+       border-radius:50px;
+      animation: 4s bounceInDown; 
+        
+   }
+   .e1{
+    height:16px;
+    width:15px;
+    position:absolute;
+    background:white;
+    top:10px;
+    left:24px;
+    border-radius:50px;
+    animation:blink 7s linear infinite;
+}
+
+.e1:after{
+    content:" ";
+    height:9px;
+    width:7px;
+    top:35%;
+    left:20%;
+    position:absolute;
+    border-radius:50px;
+    background:black;
+}
+.e1:nth-child(2){
+    left:60px;
+    top:10px;
+}
+.s1{
+    background:transparent;
+    height:19px;
+    width:30px;
+    border-bottom:5px solid black;
+    position:absolute;
+    bottom:-5px;
+    left:35px;
+    border-radius:50%;
+}
+@keyframes blink{
+    20%{
+        transform:scaleY(0);
+    }
+}
+.card span:nth-child(2){
+    position:absolute ;
+    background: yellow;
+    left:6px;
+    height:80px;
+    width:80px;
+    animation: 9s bounceInDown; 
+}
+.card span:nth-child(2).e2{
+    height:16px;
+    width:15px;
+    position:absolute;
+    background:white;
+    top:10px;
+    left:24px;
+    border-radius:50px;
+    animation:blink 9s linear;
+}
+.e2:after{
+    content:" ";
+    height:8px;
+    width:7px;
+    top:35%;
+    left:29%;
+    position:absolute;
+    border-radius:50px;
+    background:black;
+}
+.e2:nth-child(2){
+    left:40px;
+    top:10px;
+}
+.s2{
+    background:transparent;
+    height:11px;
+    width:20px;
+    border-bottom:5px solid black;
+    position:absolute;
+    bottom:-15px;
+    left:29px;
+    border-radius:50%;
+}
+.card span:nth-child(3){
+    position:absolute ;
+    background:rgb(22, 149, 164);
+    left:60px;
+    height:80px;
+    width:80px;
+    border-radius:50px;
+    animation: 13s bounceInDown; 
+}
+.card span:nth-child(3).e3{
+    height:16px;
+    width:15px;
+    position:absolute;
+    background:white;
+    top:10px;
+    left:24px;
+    border-radius:50px;
+    animation:blink 7s linear;
+}
+.e3:after{
+    content:" ";
+    height:8px;
+    width:7px;
+    top:30%;
+    left:29%;
+    position:absolute;
+    border-radius:50px;
+    background:black;
+}
+.e3:nth-child(2){
+    left:50px;
+    top:10px;
+}
+.s3{
+    background:transparent;
+    height:11px;
+    width:20px;
+    border-bottom:5px solid black;
+    position:absolute;
+    bottom:-15px;
+    left:35px;
+    border-radius:50%;
+}
+.card span:nth-child(4){
+    position:absolute ;
+    background:pink;
+    left:130px;
+    height:80px;
+    width:80px;
+    animation: 18s bounceInDown; 
+}
+.card span:nth-child(4).e4{
+    height:16px;
+    width:15px;
+    position:absolute;
+    background:white;
+    top:10px;
+    left:24px;
+    border-radius:50px;
+    animation:blink 7s linear;
+}
+.e4:after{
+    content:" ";
+    height:8px;
+    width:7px;
+    top:30%;
+    left:29%;
+    position:absolute;
+    border-radius:50px;
+    background:black;
+}
+.e4:nth-child(2){
+    left:50px;
+    top:10px;
+}
+.s4{
+    background:transparent;
+    height:11px;
+    width:20px;
+    border-bottom:5px solid black;
+    position:absolute;
+    bottom:-15px;
+    left:35px;
+    border-radius:50%;
+}
+@keyframes bounceInDown {
+from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+.bounceInDown {
+    animation-name: bounceInDown;
+  }
+  /* here code for mountain*/
+  .container{
+    position:absolute ;
+    height:100%;
+    width:100%;
+}
+.mountain{
+    height:0;
+    width:0;
+    position:absolute;
+    top:20%;
+    left:0%;
+    opacity:0.8;
+    border-left:20px solid transparent;
+    border-right:60px solid transparent;
+    border-bottom:80px solid lightgreen;
+}
+.mountain2{
+    height:1px;
+    width:0;
+    position:absolute;
+    top:20%;
+    left:30%;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-bottom:70px solid lightgreen;
+}
+.mountain:after{
+    content:" ";
+    border-left:40px solid transparent;
+    border-right:40px solid transparent;
+    border-bottom:45px solid lightgreen;
+}
+.mountain:nth-child(2){
+    left:40%;
+    top:15%;
+}
+/* here star animation*/
+.str{
+    height: 3px;
+    width:3px;
+    background-color: white;
+    position: relative;
+    border-radius:0px;
+    opacity: 0.2;
+    animation: blink 1s infinite;
+    
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+.sr1{
+    top:60px;
+    left: 300px;
+    
+}
+.sr2{
+    top:55px;
+    left: 50px;
+    animation-delay: 0.5s;
+   
+}
+.sr3{
+    left:110px;
+    top:1px;
+    animation-delay: 0.8s;
+    
+}
+.sr4{
+    left:240px;
+    top:50px;
+    animation-delay: 0.2s;
+    
+}
+.sr5{
+    left:270px;
+    top:10px;
+    animation-delay: 0.9s;
+    
+}
+.btm{
+    position:absolute ;
+        font-size:19px;
+        font-family: 'Rubik',sans-serif;
+                color:white ;
+                font-weight: 500;
+                letter-spacing: 1.5px;
+                bottom:10px;
+                left:49px;
+                text-align:center ;
+    }
+    
